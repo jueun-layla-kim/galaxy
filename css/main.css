@@ -15,6 +15,10 @@ a {
     color: inherit;
 }
 
+.mr30 {
+    margin-right: 30px;
+}
+
 .btn {
     width: 168px;
     height: 48px;
@@ -28,6 +32,13 @@ a {
 .btn.filled {
     background-color: #111;
     color: #fff;
+}
+
+.btn.btn_sm {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
 }
 
 body {
@@ -119,7 +130,7 @@ body {
 
 .slider h2 {
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 20px;
     font-weight: 700;
     font-size: 60px;
@@ -134,4 +145,239 @@ body {
     position: absolute;
     top: 330px;
     left: 20px;
+}
+
+/* product */
+.product_title {
+    text-align: center;
+}
+
+.product_title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.product_title p {
+    color: #565656;
+    margin-bottom: 60px;
+}
+
+.product_01 {
+    display: flex;
+    gap: 40px;
+    margin: 100px 0 120px;
+}
+
+.product_01 .item {
+    width: 560px;
+    height: 320px;
+    background-color: #f5f5f5;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.product_01 h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product_01 p {
+    color: #565656;
+    margin-bottom: 37px;
+}
+
+.thumb {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+}
+
+.thumb img:first-child{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.thumb img:last-child{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.thumb:hover img:first-child{
+    opacity: 0;
+}
+
+.thumb:hover img:last-child{
+    opacity: 1;
+}
+
+.product_02 ul {
+    display: flex;
+    gap: 40px;
+}
+
+.product_02 ul li {
+    background-color: #f5f5f5;
+    width: 260px;
+    height: 260px;
+    cursor: pointer;
+}
+
+.product_02 ul li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* banner */
+.banner {
+    background-image: url("../image/bg_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 90px 0 120px;
+}
+
+.banner .container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 170px 20px 152px;
+}
+
+.banner h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.banner p {
+    color: #ccc;
+    margin: 57px 0 80px;
+    width: 34%;
+}
+
+.banner .btn {
+    background-color: #fff;
+}
+
+/* product_03 */
+.product_03 {
+    margin-bottom: 120px;
+}
+
+.product_03 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product_03 li {
+    width: 260px;
+    height: 260px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog ul {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.blog ul li {
+    width: 360px;
+    height: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.blog ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* footer */
+.footer {
+    background-color: #0F172A;
+    height: 430px;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_menu {
+    display: flex;
+}
+
+.f_menu > li {
+    width: 260px;
+    position: relative;
+}
+
+.f_menu > li > a {
+    font-weight: 700;
+    padding: 10px;
+}
+
+.f_menu ul {
+    position: absolute;
+    top: 70px;
+}
+
+.f_menu ul a {
+    color: #9d9d9d;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+}
+
+.f_menu ul a:hover {
+    text-decoration: underline;
+}
+
+.f_logo img {
+    width: 160px;
+    filter: invert(100%);
+}
+
+.f_info p {
+    font-size: 13px;
+    color: #B4B4B4;
+    margin: 20px 0 40px;
+}
+
+.sns i {
+    margin-right: 12px;
+}
+
+.copyright {
+    background-color: #0F172A;
+    border-top: 1px solid #1E293B;
+    color: #A1A1AA;
+    font-size: 14px;
+}
+
+.copyright .container {
+    height: 70px;
+    line-height: 70px;
 }
